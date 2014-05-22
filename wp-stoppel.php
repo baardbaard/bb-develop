@@ -3,7 +3,7 @@
 /*
 Plugin Name: WP-Stoppel
 Plugin URI: https://github.com/baardbaard/wp-stoppel
-Description: WordPress plugin for development
+Description: WordPress plugin for development.
 Version: 1.0
 Author: Stef Thoen
 Author URI: http://baardbaard.nl
