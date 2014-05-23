@@ -1,8 +1,8 @@
 <?php
 
 /*
-Plugin Name: WP-Stoppel
-Plugin URI: https://github.com/baardbaard/wp-stoppel
+Plugin Name: BB Develop
+Plugin URI: https://github.com/baardbaard/bb-develop
 Description: WordPress plugin for development.
 Version: 1.0
 Author: Baardbaard
@@ -14,7 +14,6 @@ License: MIT
  * Log error messages
  *
  * @return void
- * @author Stef Thoen
  * @since  1.0
  */
 if ( !function_exists( '_log' ) ) {
@@ -28,5 +27,17 @@ if ( !function_exists( '_log' ) ) {
 		}
 	}
 }
+
+/* Custom admin menu link for all settings
+ *
+ * @return void;
+ * @since 1.0
+ */
+function bb_all_settings_link() {
+	add_options_page( __( 'All Settings' ), __( 'All Settings' ), 'administrator', 'options.php' );
+}
+
+add_action( 'admin_menu', 'bb_all_settings_link' );
+
 
 ?>
